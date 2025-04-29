@@ -1,0 +1,29 @@
+{% extends "home.html" %}
+{% load static %}
+
+{% block title %}Products{% endblock %}
+
+{% block content %}
+<div class="flex justify-between items-center mb-6">
+  <h1 class="text-3xl font-bold">My Products</h1>
+  <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Add Product</button>
+</div>
+
+<!-- Search bar -->
+<div class="mb-6">
+  <input type="text" placeholder="Search products..." class="w-full px-4 py-2 border rounded shadow-sm" />
+</div>
+
+<!-- Product Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+  
+  <!-- Example Product Card -->
+  <div class="bg-white p-4 rounded-lg shadow">
+    <img src="{% static 'images/images1.jpg' %}" alt="Product" class="h-40 w-full object-cover rounded mb-4" />
+    <h2 class="text-xl font-semibold mb-2">Product Title</h2>
+    <button class="bg-yellow-500 text-white px-3 py-1 rounded hover:bg-yellow-600">Edit</button>
+  </div>
+
+  <!-- Repeat or loop through more products here -->
+</div>
+{% endblock %}
