@@ -1,0 +1,28 @@
+{% extends "home.html" %}
+
+{% block title %}AI Price Suggestions{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-6">AI Price Suggestions</h1>
+
+<div class="bg-white shadow rounded-lg p-6 max-w-3xl w-full space-y-6">
+    <select name="product" id="product"
+        class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+        <option value="">Choose a product</option>
+        {% for product in products %}
+        <option value="{{ product.id }}">{{ product.name }}</option>
+        {% endfor %}
+    </select>
+
+    <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">
+        Get Price Suggestion
+    </button>
+
+
+    {% if suggestion %}
+    <div class="p-4 bg-green-100 text-green-800 rounded-md">
+        <strong>Suggested Price:</strong> ₹{{ suggestion }}
+    </div>
+    {% endif %}
+</div>
+{% endblock %}
