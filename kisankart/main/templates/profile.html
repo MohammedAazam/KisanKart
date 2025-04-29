@@ -1,1 +1,37 @@
-hey
+<!-- profile.html -->
+{% extends "home.html" %}
+
+{% block title %}Profile{% endblock %}
+
+{% block content %}
+<h1 class="text-3xl font-bold mb-4">My Profile</h1>
+
+<div class="bg-white shadow rounded-lg p-6 w-full max-w-2xl">
+  <div class="flex items-center space-x-4 mb-6">
+    
+    <div>
+      <h2 class="text-xl font-semibold">Mohammed Aazam</h2>
+      <p class="text-gray-500">Information Science Student</p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Email</label>
+      <p class="text-gray-900">aazam@example.com</p>
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Phone</label>
+      <p class="text-gray-900">+91 98765 43210</p>
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Location</label>
+      <p class="text-gray-900">Bangalore, India</p>
+    </div>
+    <div>
+      <label class="block text-sm font-medium text-gray-700">Skills</label>
+      <p class="text-gray-900">HTML, CSS, JavaScript, React, Tailwind</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
