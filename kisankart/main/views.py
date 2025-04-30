@@ -63,7 +63,7 @@ def profile(request):
     return render(request, 'profile.html')
 
 # Load the pre-trained model (ensure the path is correct)
-with open('fruit_price_model.pkl', 'rb') as model_file:
+with open('model.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
     
 def predict_price(request):
