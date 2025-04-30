@@ -1,36 +1,61 @@
-<!-- profile.html -->
 {% extends "home.html" %}
-
-{% block title %}Profile{% endblock %}
+{% block title %}Farmer Profile{% endblock %}
 
 {% block content %}
-<h1 class="text-3xl font-bold mb-4">My Profile</h1>
+<div class="max-w-3xl mx-auto bg-white shadow-lg rounded-lg p-8 mt-8">
+  <!-- Header -->
+  <div class="flex items-center space-x-6 mb-6">
+    <img
+      src="/static/images/profile.png"
+      alt="Farmer Photo" class="w-24 h-24 rounded-full border-4 border-green-500">
 
-<div class="bg-white shadow rounded-lg p-6 w-full max-w-2xl">
-  <div class="flex items-center space-x-4 mb-6">
-    
     <div>
-      <h2 class="text-xl font-semibold">Mohammed Aazam</h2>
-      <p class="text-gray-500">Information Science Student</p>
+      <h2 class="text-3xl font-bold text-green-700">Ramesh Gowda</h2>
+      <p class="text-gray-600 text-lg">Experienced Organic Farmer</p>
     </div>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  <!-- Contact Info -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800 mb-6">
     <div>
-      <label class="block text-sm font-medium text-gray-700">Email</label>
-      <p class="text-gray-900">aazam@example.com</p>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Email</p>
+      <p class="text-lg font-medium">rameshgowda@example.com</p>
     </div>
     <div>
-      <label class="block text-sm font-medium text-gray-700">Phone</label>
-      <p class="text-gray-900">+91 98765 43210</p>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Phone</p>
+      <p class="text-lg font-medium">+91 94484 12345</p>
     </div>
     <div>
-      <label class="block text-sm font-medium text-gray-700">Location</label>
-      <p class="text-gray-900">Bangalore, India</p>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Location</p>
+      <p class="text-lg font-medium">Hassan, Karnataka</p>
     </div>
     <div>
-      <label class="block text-sm font-medium text-gray-700">Skills</label>
-      <p class="text-gray-900">HTML, CSS, JavaScript, React, Tailwind</p>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Experience</p>
+      <p class="text-lg font-medium">15+ Years in Organic Farming</p>
+    </div>
+  </div>
+
+  <!-- Additional Details -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-800">
+    <div>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Land Size</p>
+      <p class="text-lg font-medium">10 Acres</p>
+    </div>
+    <div>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Farming Type</p>
+      <p class="text-lg font-medium">Organic & Sustainable Farming</p>
+    </div>
+    <div>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Crops Grown</p>
+      <p class="text-lg font-medium">Tomatoes, Beans, Carrots, Ragi</p>
+    </div>
+    <div>
+      <p class="text-sm text-gray-500 uppercase font-semibold">Machinery</p>
+      <p class="text-lg font-medium">Tractor, Seeder, Irrigation System</p>
+    </div>
+    <div class="md:col-span-2">
+      <p class="text-sm text-gray-500 uppercase font-semibold">Skills</p>
+      <p class="text-lg font-medium">Soil Health Management, Rainwater Harvesting, Pest Control, Crop Rotation</p>
     </div>
   </div>
 </div>
